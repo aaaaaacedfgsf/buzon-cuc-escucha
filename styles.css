@@ -14,7 +14,7 @@ body {
 }
 
 .header {
-    background-color: #003366;
+    background-color: #1a5276; /* Cambia el azul original por este otro tono */
     color: #ffffff;
     text-align: center;
     padding: 2.5rem 1rem;
