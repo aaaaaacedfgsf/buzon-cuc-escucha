@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buzón CUC Escucha</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Buzón CUC Escucha</h1>
+        <p>Tu opinión nos ayuda a mejorar la experiencia universitaria en la Facultad de Ingeniería</p>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>Registra tu sugerencia o idea</h2>
+            <form id="buzonForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo Institucional:</label>
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@cuc.edu.co" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="categoria">Categoría del asunto:</label>
+                    <select id="categoria" name="categoria" required>
+                        <option value="" disabled selected>Selecciona una opción</option>
+                        <option value="bienestar">Bienestar Universitario</option>
+                        <option value="servicios">Servicios Campus</option>
+                        <option value="clases">Clases / Docentes</option>
+                        <option value="inclusion">Inclusión</option>
+                        <option value="espacios">Espacios e Infraestructura</option>
+                        <option value="procesos">Procesos Académicos</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Sugerencia / Idea:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje en detalle..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Enviar Sugerencia</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Universidad de la Costa - Facultad de Ingeniería</p>
+    </footer>
+
+</body>
+</html>
